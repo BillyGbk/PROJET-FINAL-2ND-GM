@@ -1,0 +1,651 @@
+/*********************** body ********************************/
+
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Special Elite', cursive;
+    background-color: #ede4d9;
+    width: 100%;
+	height: 100%;
+    min-height: 100vh;
+}
+
+/************************Formulaire*************************/
+
+
+/*body
+{
+    /*background: -webkit-linear-gradient(top, #CBC9C8  , #BEB9B8, #ACA9A8); 
+    background: -o-linear-gradient(bottom,#CBC9C8  , #BEB9B8, #ACA9A8);
+    background: -moz-linear-gradient(bottom, #CBC9C8  , #BEB9B8, #ACA9A8); 
+    background: linear-gradient(to bottom, #CBC9C8  , #BEB9B8, #ACA9A8);
+    background-image: url("etoile2.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat ; 
+    height: 100%;
+    width: 100% ;
+    
+    
+    
+}*/
+.image
+{
+    width: 30vw;
+    height: 30vw;
+    position: absolute ;
+    background-color: #686868 ;
+}
+
+.champ
+{
+  background: #f2f2f2;
+  border-radius: 2px;
+
+  font-family: Raleway-SemiBold;
+  font-size: 0.8vw;
+  color: #686868;
+  line-height: 1.2;
+  padding: 0 1vw;
+
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+
+  margin-top: 1vw;
+}
+.span
+{
+font-family: Raleway-SemiBold;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+label
+{
+    display: inline-block ;
+    width: 10vw ;
+    text-align: left ;
+    margin-bottom: 1vw ;
+    
+}
+.image
+{
+    width: 1vw ;
+    height: 1vw ;
+}
+.formulaire
+{
+    min-width: 40vw ;
+    max-width: 40vw ;
+    background: -webkit-linear-gradient(top, rgb(170, 124, 109)  , rgb(134, 71, 59), rgb(65, 38, 25)); 
+    background: -o-linear-gradient(bottom, #ACA9A8  , #BEB9B8, #CBC9C8);
+    background: -moz-linear-gradient(bottom, #ACA9A8  , #BEB9B8, #CBC9C8); 
+    background: linear-gradient(to bottom, #ACA9A8  , #BEB9B8, #CBC9C8);
+    color: black ;
+    border-radius: 30px ;
+    padding-left: 3vw ;
+    opacity: 0.9;
+    margin-top: 3vw ;
+    margin-bottom: 3vw ;
+    height: 40vw;
+
+}
+.button
+{
+  
+  border-radius: 5px;
+  background: #df2351;
+  background: -webkit-linear-gradient(right, #ACA9A8, #BEB9B8, #CBC9C8);
+  background: -o-linear-gradient(right,  #ACA9A8, #BEB9B8, #CBC9C8);
+  background: -moz-linear-gradient(right,  #ACA9A8, #BEB9B8, #CBC9C8);
+  background: linear-gradient(right,  #ACA9A8, #BEB9B8, #CBC9C8);
+  text-transform: uppercase;
+}
+h1{
+    text-align: center ;
+    text-shadow:    0 0 0.2em whitesmoke,
+                    0 0 0.2em whitesmoke,
+                    0 0 0.2em whitesmoke,
+                    -2px 0 whitesmoke,
+                    0 2px whitesmoke,
+                    2px 0 whitesmoke,
+                    0 -2px whitesmoke;
+}
+input
+{
+    min-width: 13vw;
+    max-width: 13vw;
+    max-height: 2vw;
+       
+}
+label{
+    min-width: 13vw;
+    max-width: 13vw;
+}
+
+
+  
+  
+  @media (max-width: 768px) {
+    .input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .input{
+      padding: 66px 15px 59px 15px;
+    }
+  }
+/************************* Header **************************/
+header{
+    width:100%;
+    background-image: url("../galerie/carto.jpg");
+    background-position: center;
+    background-size:105vw;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size:5em;
+    color: black;
+}
+#audio{
+    position: absolute;
+    right:0;
+}
+/************************* navigateur ***************************/
+nav{
+    font-size:1.5em;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0vw;
+    margin: 0vw;
+    justify-content: center;
+}
+
+
+.sousMenu {
+    display: none;
+    position: absolute;
+    flex-flow: column;
+    list-style: none;
+    margin-top: 2.4vw;
+    padding: 0.5vw;
+    border: solid black 3px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    background: #aab662;
+    background-image: linear-gradient(to bottom, #b5904d, #aab662);
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    border: solid black 3px;
+}
+
+.btn > a {
+    text-decoration: none;
+    color:black;
+    padding: 0.5vw 1vw;
+}
+
+.btn:hover .sousMenu {
+    background: #aab662;
+    background-image: linear-gradient(to bottom, #b5904d, #aab662);
+    z-index: 2;
+    display: flex;
+}
+
+.cache{
+    display: none;
+}
+/****************************** Accueil *****************************/
+section{
+    
+    padding: 2vw;
+    text-align: justify;
+    font-size: 1.4em;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    flex: 1;
+    min-height: 30vw ;
+}
+.cadre{
+    align-content: center;
+}
+/************************* présentation du site ***********************/
+.titrePresentation{
+    text-align: center;
+}
+.soustitrePresentation{
+    text-align: center;
+
+}
+#presentation{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#presentation p{
+    display:flex;
+     width:20vw;
+     margin:0;
+     background-image: url("../galerie/bloc2.png");
+     padding: 2vw;   
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover; /* (l'utilité du background :cover l'image est centrée et recouvre intégralement la zone )*/
+}
+#boulogne1{
+    height: auto;
+    max-width: 700px;
+    min-width: 700px;
+    margin-right:2vw;
+    width:36vw;
+    box-shadow: 5px 5px 5px #555555;
+    border: solid black 3px;
+}
+/************************  Historique de l'opération   ***********************/
+#article1{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:4vw;
+}
+#article1 p{
+    padding: 2vw;
+    width:20vw;
+    margin:0;
+    background-image: url("../galerie/bloc2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#boulogne2{
+    height: auto;
+    box-shadow: -5px -5px 5px #555555;
+    max-width:638px;
+    min-width: 638px;
+    margin-left: 2vw;
+    border: solid black 3px;
+
+}
+
+/**************************************** footer ******************************/
+footer{
+    width:100%;
+    margin:0vw;
+    padding:0vw;
+    background-image: linear-gradient(to bottom, rgb(189, 183, 107),rgb(196, 170, 137));
+    display: flex;
+    justify-content: center;
+    align-content: flex-end ;
+}
+
+#listeFooter{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 1px 2px 2px #666666;
+    font-size:1.5em;
+    width: 35%;
+    justify-content: space-between;
+}
+
+
+#listeFooter li a{
+    text-decoration: none;
+    color: #ede4d9;
+}
+/******************************** fleche *******************************************/
+
+#imageFleche{
+    width:7vw;
+}
+
+#choiFleche{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/****************************PAGE avant guerre*************************/
+
+#crise{
+    width:25%;
+    float: right;
+    margin: 1em;
+    border: 4px solid black;
+    box-shadow: -9px 9px 9px #555555;
+}
+
+#extreme{
+    float: left;
+    width:40%;
+    border: 4px solid black;
+    background-color: whitesmoke;
+    box-shadow: 9px 9px 9px #555555;
+}
+
+
+#extreme img{
+    width:100%;
+}
+
+#adolf{
+    float: right;
+    margin: 1em;
+    border: 4px solid black;
+    box-shadow: -9px 9px 9px #555555;
+}
+
+
+/***************************** PAGE Bilan humain et matériel ******************/
+#article2{
+    display: flex;
+    flex-direction: row;
+}
+#ruine{     /* dimension de la photo de Boulogne en ruine */
+    width:30vw;
+}
+figure {            /* photo avec legend photo de Boulogne en ruine */
+    float: left;
+    width: 30vw;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    box-shadow: 9px 9px 9px #555555;
+    text-indent: 0;
+    border: thin silver solid;
+    margin-right:2vw;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+
+  #figure {   /* cadre avec legende photo canadiens qui réparent le pont */
+    float: right;
+    width: 30vw;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    box-shadow: 9px 9px 9px #555555;
+    text-indent: 0;
+    border: thin silver solid;
+    margin-right:2vw;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+
+/****************************PAGE 2nd GM*************************/
+
+#monde{
+    float: right;
+    width:65%;
+    margin: 1em;
+    margin-top: 0;
+    border: 4px solid black;
+    box-shadow: -9px 9px 9px #555555;
+}
+
+#v2{
+    float: right;
+    width:30%;
+    margin: 1em;
+    margin-top: 0;
+    border: 4px solid black;
+    box-shadow: -9px 9px 9px #555555;
+}
+
+#japan{
+    float: right;
+    margin: 1em;
+    margin-top: 0;
+    border: 4px solid black;
+    box-shadow: -9px 9px 9px #555555;
+}
+
+/******************************* Les pays impliqués *********************************/
+.commandant{
+    
+    display:flex;
+    flex-direction: row;
+}
+.figure1{
+    width: 20%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    box-shadow: 9px 9px 9px #555555;
+    text-indent: 0;
+    border: thin silver solid;
+    margin-right:2vw;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+#commandant1 {
+    width: 10vw; /* photo Spry */
+}
+
+#commandant2 {
+    width: 12vw; /* photo Crerar */
+}
+
+#commandant3 {
+    width: 10.5vw; /* photo Hobart */
+}
+
+#commandant4 {
+    width: 11vw; /* photo Heim */
+}
+#victory{
+    width:30%;
+    align-content: center;  /* carte boulogne 17 et 22 Septembre*/
+    margin:2vw;
+    float:inline-start;
+    box-shadow: 9px 9px 9px #555555;
+}
+
+
+/**********************LES PAGES SEPTEMBRE*******************/
+#Septembre17{
+    float: right;
+    width: 35vw;
+    margin: 1em;
+    margin-top: 0;
+    border: 4px solid #555555;
+    box-shadow: -9px 9px 9px #555555;
+
+}
+#Septembre18{
+    
+    float: right;
+    width:35vw;
+    margin: 1em;
+    margin-top: 0;
+    border: 4px solid black;
+    box-shadow: -9px 9px 9px #555555;
+}
+#Septembre19{
+    float: right;
+    width:40%;
+    margin: 1em;
+    margin-top: 0;
+    border: 4px solid black;
+    background-color: whitesmoke;
+    box-shadow: -9px 9px 9px #555555;
+}
+#Septembre21{
+    float: right;
+    width:600px;
+    margin: 1em;
+    margin-top: 0;
+    border: 4px solid black;
+    box-shadow: -9px 9px 9px #555555;
+}
+
+#Septembre22{
+    float: right;
+    width:40%;
+    margin: 1em;
+    margin-top: 0;
+    border: 4px solid black;
+    background-color: whitesmoke;
+    box-shadow: -9px 9px 9px #555555;
+}
+
+
+#Septembre22img{
+    width:100%; 
+}
+#Septembre20{
+    padding:4vw;
+
+}
+iframe{
+    
+    float: right;
+    width:40%;
+    height:300px;
+    margin: 1em;
+    border: 4px solid black;
+    background-color: whitesmoke;
+    box-shadow: -9px 9px 9px #555555;
+    
+}
+/************************** uniformes *********************/
+
+.tenu{
+    display:flex;
+}
+#anglais{
+    width:20vw;
+}
+#canadien{
+    width:20vw;
+}
+#allemand{
+    width:23vw;
+}
+
+/*-------------------------Forum-------------------------------------*/
+
+.commentaire
+{
+    display: flex;
+    flex-direction: column ;
+}
+
+.pseudoCommentaire
+{
+    background: #aab662;
+    background-image: linear-gradient(to bottom, #b5904d, #aab662);
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    border: solid black 3px;
+    max-width: 10vw;
+    margin-bottom: 1vw ;
+    min-height: 3vw;
+    align-content: center ;
+    align-items: center ;
+    justify-content: center ;
+    background-image: url(../galerie/bloc2.png);
+}
+.descriptionCommentaire
+{
+    background: #aab662;
+    background-image: linear-gradient(to bottom, #b5904d, #aab662);
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    border: solid black 3px;
+    width: 30vw;
+    min-height: 7vw;;
+    margin-bottom: 1vw ;
+    align-content: center ;
+    align-items: center ;
+    justify-content: center ;
+    margin-bottom: 4vw ;
+    background-image: url(../galerie/bloc2.png);
+    background-size: cover ;
+    
+    
+}
+.element
+{
+    display: flex ;
+}
+.modifCom
+{
+    
+    background: #aab662;
+    background-image: linear-gradient(to bottom, #b5904d, #aab662);
+    border-radius: 5px;
+    color: black;
+    border: solid black 3px;
+    max-width: 20vw;
+    min-width: 12vw;
+    align-content: center ;
+    align-items: center ;
+    justify-content: center ;
+    max-height: 3vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    text-decoration: none;
+    align-content: center ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.supprCom
+{
+    
+    background: #aab662;
+    background-image: linear-gradient(to bottom, #b5904d, #aab662);
+    border-radius: 5px;
+    color: black;
+    border: solid black 3px;
+    max-width: 20vw;
+    min-width: 12vw;
+    align-content: center ;
+    align-items: center ;
+    justify-content: center ;
+    max-height: 3vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    text-decoration: none;
+    align-content: center ;
+    align-items: center ;
+    justify-content: center ;
+}
+.titreCom
+{
+    width: 40vw;
+    max-width: 40vw;
+    align-content: center ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+
